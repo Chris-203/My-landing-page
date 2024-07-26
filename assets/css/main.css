@@ -4064,8 +4064,8 @@ input, select, textarea {
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 .wrapper.style2{
-		/* background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg");
-		/* background-image:  url("../../images/futuristic.jpg"); */ */
+		/* background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg");*/
+		/* background-image:  url("../../images/futuristic.jpg"); */
 		/* background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg"); */
 		/* background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg"); */
 		background-position: center center;
