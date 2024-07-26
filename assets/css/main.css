@@ -32,6 +32,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+.tab {
+	padding: 10px 30px;
+}
 
 ol, ul {
 	list-style: none;
@@ -2610,6 +2613,14 @@ input, select, textarea {
 				top: 2.75em;
 				font-size: 1.5em;
 			}
+			#lol:before {
+				display: block;
+				color: #00ffcc;
+				position: absolute;
+				left: -2em;
+				top: .2em;
+				font-size: 1.6em;
+			}
 
 			.features li:nth-child(1) {
 				border-top-left-radius: 3px;
@@ -2635,6 +2646,12 @@ input, select, textarea {
 				}
 
 					.features li:before {
+						left: 0;
+						margin: 0 0 1em 0;
+						position: relative;
+						top: 0;
+					}
+					#lol:before {
 						left: 0;
 						margin: 0 0 1em 0;
 						position: relative;
@@ -2795,6 +2812,15 @@ input, select, textarea {
 			width: 60em;
 			margin: 0 auto;
 		}
+		#quote {
+			width: 35em;
+			margin: 0 auto;
+			color: white;
+			text-align: center;
+			justify-items: center;
+			/* border-left: 10px solid transparent ; */
+		}
+		
 
 			@media screen and (max-width: 1280px) {
 
@@ -2976,7 +3002,59 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background-color: #2e3842;
+			/* margin-top: 5%; */
+			padding: 150px;
+			height: 370px;
+			text-align: center;
+			/* background-color: #2e3842; */
+			/* height: 170px; */
+		}
+		#yes {
+			width: 35em;
+			margin: 0 auto;
+			color: white;
+			text-align: center;
+			justify-items: center;
+			/* border-left: 10px solid transparent ; */
+		}
+		@media screen and (max-width: 980px) {
+			/* .wrapper.style2 { */
+				/* background-color: transparent; Ensures transparency on smaller screens */
+				/* height: 90%; */
+			/* } */
+		
+			#yes {
+				width: 110%; /* Adjust width for smaller screens */
+				/* height: 90%; */
+			}
+			/* .wrapper.style4 {
+				padding: 10%;
+
+			} */
+			#quote {
+				font-size: 120%;
+			}
+		}
+		
+		@media screen and (max-width: 736px) {
+			#quote{
+				width: 80%; /* Further adjust width for even smaller screens */
+				font-size: 110%;
+				
+			}
+			.wrapper.style4 {
+				padding: 5%;
+			}
+			.wrapper.style2 {
+				width: 90%;
+				padding: 5%;
+				background-color: transparent; /* Ensures transparency on smaller screens */
+				height: 90%;
+			}
+			#yes {
+				width: 110%; /* Adjust width for smaller screens */
+				/* height: 90%; */
+			}
 		}
 
 		.wrapper.style3 {
@@ -3140,6 +3218,7 @@ input, select, textarea {
 
 		.wrapper.style4 {
 			background-color: transparent;
+			margin: 1%;
 		}
 
 		.wrapper.style5 {
@@ -3814,10 +3893,10 @@ input, select, textarea {
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg.jpg");
+		/* background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/projectbackground.jpg"); */
+		background-image:  url("../../images/project1.jpg");
+		/* background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bprojectbackground.jpg"); */
+		/* background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bprojectbackground.jpg"); */
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3964,10 +4043,10 @@ input, select, textarea {
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg");
+		/* background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg"); */
+		background-image:  url("../../images/futuristic.jpg");
+		/* background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg"); */
+		/* background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg"); */
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3979,16 +4058,16 @@ input, select, textarea {
 		background-color: rgba(29, 36, 42, 0.9);
 	}
 
-	body.is-mobile.landing #page-wrapper {
+	body.is-mobile.landing #banner, body.is-mobile.landing #page-wrapper .wrapper.style2 .wrapper.style4 {
 		background: none;
 	}
 
 	body.is-mobile.landing #banner,
-	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg");
+	body.is-mobile.landing .wrapper.style4 .wrapper.style2{
+		/* background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg");
+		/* background-image:  url("../../images/futuristic.jpg"); */ */
+		/* background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg"); */
+		/* background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/futuristic.jpg"); */
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
