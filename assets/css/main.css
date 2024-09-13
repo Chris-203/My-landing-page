@@ -4109,7 +4109,7 @@ input, select, textarea {
 	}
 
 	/* Hover effect */
-	#banner nav ul li a:hover, .icons li span:hover {
+	#banner nav ul li a:hover, .icons li span:hover, #clip:hover {
 		background-color: #fff;
 		color: #000;
 	}
